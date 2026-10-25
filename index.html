@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glasiele Gaede · Psicopedagoga em Santa Rosa, Niterói</title>
+<meta name="description" content="Glasiele Gaede, psicopedagoga em Santa Rosa, Niterói. Avaliação e intervenção psicopedagógica para crianças e adolescentes com desafios na aprendizagem, com apoio às famílias.">
+<meta property="og:title" content="Glasiele Gaede · Psicopedagoga">
+<meta property="og:description" content="Apoio famílias e ajudo crianças e adolescentes a superar desafios na aprendizagem. Santa Rosa, Niterói.">
+<meta property="og:image" content="img/glasiele.jpg">
+<meta name="theme-color" content="#7b4fa8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23e8582a'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'%3EGG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --laranja:#e8582a; --laranja-esc:#c8461d; --laranja-claro:#fdebe3;
+  --roxo:#7b4fa8; --roxo-esc:#55327a; --lilas:#efe6f7; --creme:#fbf6ef;
+  --tinta:#2d2433; --suave:#655c6b; --raio:24px; --sombra:0 24px 48px -28px rgba(85,50,122,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Nunito",system-ui,sans-serif;color:var(--tinta);background:#fff;line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;line-height:1.12;color:var(--roxo-esc)}
+h2{font-size:clamp(1.9rem,3.6vw,2.6rem)}
+h2 span,h1 span{color:var(--laranja)}
+.kicker{display:inline-block;background:var(--laranja-claro);color:var(--laranja-esc);font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .8rem;border-radius:999px;margin-bottom:.9rem}
+.lead{color:var(--suave);font-size:1.07rem;max-width:58ch}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:800;text-decoration:none;font-size:.98rem;transition:transform .2s,background .2s,color .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-lar{background:var(--laranja);color:#fff;box-shadow:0 14px 28px -14px rgba(232,88,42,.9)}
+.btn-lar:hover{background:var(--laranja-esc);transform:translateY(-2px)}
+.btn-linha{border:2px solid var(--roxo);color:var(--roxo)}
+.btn-linha:hover{background:var(--roxo);color:#fff}
+
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid #f0e6f5}
+.topo{display:flex;align-items:center;justify-content:space-between;height:80px;gap:16px}
+.marca img{height:54px;width:auto}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;font-weight:700;color:var(--suave);font-size:.95rem}
+nav a:hover{color:var(--laranja)}
+nav .btn{padding:.65rem 1.2rem;font-size:.9rem}
+@media (max-width:900px){nav a:not(.btn){display:none}}
+@media (max-width:420px){nav .btn span{display:none}nav .btn{padding:.75rem}.marca img{height:44px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--creme);padding:60px 0 90px}
+.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:var(--lilas);right:-140px;top:-120px}
+.hero::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:var(--laranja-claro);left:-80px;bottom:-60px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5vw,3.7rem);margin-bottom:1rem}
+.hero .lead{margin-bottom:1.6rem}
+.eq{display:inline-flex;align-items:center;gap:.6rem;flex-wrap:wrap;background:#fff;border-radius:16px;padding:.8rem 1.1rem;font-weight:800;color:var(--roxo-esc);margin-bottom:1.8rem;box-shadow:0 10px 26px -18px rgba(85,50,122,.6)}
+.eq b{color:var(--laranja)}
+.acoes{display:flex;flex-wrap:wrap;gap:12px}
+.foto-hero{position:relative;justify-self:center;width:min(430px,100%)}
+.foto-hero .f{border-radius:42% 58% 50% 50%/48% 44% 56% 52%;overflow:hidden;aspect-ratio:1;border:10px solid #fff;box-shadow:var(--sombra)}
+.foto-hero .f img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.selo{position:absolute;left:-12px;bottom:26px;background:#fff;border-radius:18px;padding:.8rem 1rem;box-shadow:var(--sombra);display:flex;gap:.7rem;align-items:center}
+.selo strong{font-family:"Fredoka",sans-serif;font-size:1.8rem;color:var(--laranja);line-height:1}
+.selo .est{color:#f4b400;letter-spacing:2px;font-size:.9rem}
+.selo small{display:block;color:var(--suave);font-size:.78rem;font-weight:700}
+.bolha{position:absolute;right:-6px;top:30px;background:var(--roxo);color:#fff;font-weight:800;font-size:.85rem;padding:.55rem .95rem;border-radius:18px 18px 18px 4px;box-shadow:var(--sombra)}
+@media (max-width:900px){.hero{padding:34px 0 70px}.hero-grid{grid-template-columns:1fr;gap:36px}.foto-hero{order:-1;width:min(320px,82%)}.bolha{right:-10px}}
+
+section{padding:90px 0}
+.cab{text-align:center;max-width:700px;margin:0 auto 46px}
+.cab .lead{margin:.9rem auto 0}
+
+/* para quem */
+.publico{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pub{border-radius:var(--raio);padding:28px 24px;background:var(--lilas)}
+.pub:nth-child(2){background:var(--laranja-claro)}
+.pub:nth-child(3){background:var(--creme)}
+.pub .ico{width:54px;height:54px;border-radius:16px;background:#fff;display:grid;place-items:center;color:var(--roxo);margin-bottom:16px}
+.pub:nth-child(2) .ico{color:var(--laranja)}
+.pub .ico svg{width:28px;height:28px}
+.pub h3{font-size:1.35rem;margin-bottom:.4rem}
+.pub p{color:var(--suave);font-size:.97rem}
+@media (max-width:900px){.publico{grid-template-columns:1fr}}
+
+/* habilidades */
+.hab{background:var(--roxo-esc);color:#fff;position:relative;overflow:hidden}
+.hab h2{color:#fff}
+.hab .lead{color:rgba(255,255,255,.82)}
+.hab .kicker{background:rgba(255,255,255,.12);color:#ffc7ae}
+.hab-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:1.6rem 0}
+.chips span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:.5rem 1rem;font-weight:700;font-size:.93rem}
+.chips span.l{background:var(--laranja);border-color:var(--laranja)}
+.hab-foto{border-radius:var(--raio);overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.hab-foto img{width:100%;height:100%;object-fit:cover}
+.exemplos{list-style:none;display:grid;gap:12px;margin-top:1.4rem}
+.exemplos li{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.07);border-radius:16px;padding:14px 16px;font-size:.96rem}
+.exemplos svg{flex:none;width:22px;height:22px;color:#ffc7ae;margin-top:2px}
+@media (max-width:900px){.hab-grid{grid-template-columns:1fr}.hab-foto{max-width:420px;margin-inline:auto;width:100%}}
+
+/* como funciona */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:p}
+.passo{position:relative;background:#fff;border:2px solid var(--lilas);border-radius:var(--raio);padding:34px 26px 26px}
+.passo::before{counter-increment:p;content:counter(p);position:absolute;top:-22px;left:24px;width:44px;height:44px;border-radius:14px;background:var(--laranja);color:#fff;font-family:"Fredoka",sans-serif;font-size:1.3rem;display:grid;place-items:center}
+.passo h3{font-size:1.25rem;margin-bottom:.35rem}
+.passo p{color:var(--suave);font-size:.96rem}
+@media (max-width:900px){.passos{grid-template-columns:1fr;row-gap:36px}}
+
+/* sobre */
+.sobre{background:var(--creme)}
+.sobre-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.sobre-foto{border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra);aspect-ratio:1}
+.sobre-foto img{width:100%;height:100%;object-fit:cover}
+.form{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:1.6rem 0 1.4rem}
+.form li{background:#fff;border-radius:16px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.form svg{flex:none;width:24px;height:24px;color:var(--roxo)}
+.form b{display:block;color:var(--roxo-esc);font-size:.98rem}
+.form span{color:var(--suave);font-size:.88rem}
+.citacao{border-left:4px solid var(--laranja);padding:6px 0 6px 18px;font-style:italic;color:var(--roxo-esc);margin-bottom:1.8rem}
+@media (max-width:900px){.sobre-grid{grid-template-columns:1fr}.sobre-foto{max-width:420px;width:100%;margin-inline:auto}}
+@media (max-width:480px){.form{grid-template-columns:1fr}}
+
+/* depoimentos */
+.deps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.dep{background:#fff;border-radius:var(--raio);padding:26px;display:flex;flex-direction:column;box-shadow:0 16px 36px -26px rgba(85,50,122,.55);border-top:5px solid var(--roxo)}
+.dep:nth-child(even){border-top-color:var(--laranja)}
+.dep .est{color:#f4b400;letter-spacing:2px;font-size:.92rem}
+.dep p{margin:.7rem 0 1.2rem;flex:1}
+.dep footer{font-weight:800;color:var(--roxo-esc);font-size:.93rem;display:flex;gap:10px;align-items:center}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--lilas);color:var(--roxo);font-weight:800}
+.dep footer small{display:block;color:var(--suave);font-weight:600;font-size:.78rem}
+.nota-g{display:inline-flex;gap:10px;align-items:center;background:var(--lilas);border-radius:999px;padding:.5rem 1.1rem;font-weight:800;color:var(--roxo-esc);margin-top:1rem}
+.nota-g .est{color:#f4b400;letter-spacing:2px}
+@media (max-width:900px){.deps{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.deps{grid-template-columns:1fr}}
+
+/* contato */
+.contato{background:var(--lilas)}
+.contato-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:44px}
+.info{display:grid;gap:12px;margin:1.6rem 0 2rem}
+.info>a,.info>div{display:flex;gap:14px;align-items:flex-start;text-decoration:none;background:#fff;border-radius:16px;padding:14px 16px;transition:transform .2s}
+.info>a:hover{transform:translateX(4px)}
+.info svg{flex:none;width:22px;height:22px;color:var(--laranja);margin-top:2px}
+.info b{display:block;color:var(--roxo-esc)}
+.info span{color:var(--suave);font-size:.93rem}
+.horas{display:grid;grid-template-columns:auto auto;gap:2px 18px;font-size:.92rem;color:var(--suave);margin-top:4px}
+.extras{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.extras span{font-size:.85rem;color:var(--suave)}
+.mapa{border-radius:var(--raio);overflow:hidden;min-height:420px;background:#fff;box-shadow:var(--sombra)}
+.mapa iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+@media (max-width:900px){.contato-grid{grid-template-columns:1fr}}
+
+.rodape{background:var(--roxo-esc);color:rgba(255,255,255,.78);padding:26px 0;font-size:.9rem}
+.rodape .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.rodape a{color:#fff;font-weight:800;text-decoration:none}
+.rodape b{font-family:"Fredoka",sans-serif;color:#fff;font-size:1.15rem;font-weight:600}
+
+.zap{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.45);transition:transform .2s}
+.zap:hover{transform:scale(1.07)}
+.zap svg{width:32px;height:32px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.on{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.41 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.1-1.47-1.1-2.81s.7-2 .95-2.27c.25-.27.54-.34.72-.34h.52c.17 0 .4-.06.62.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46l-.41.48c-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.89 1.04.93 1.92 1.22 2.19 1.35.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.33Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-kid" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><path d="M6 21v-3a6 6 0 0 1 12 0v3M9 12l-3-2M15 12l3-2"/></g></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 6c-2-1.5-5-2-8-1.5V19c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V4.5C17 4 14 4.5 12 6Zm0 0v14.5"/></symbol>
+  <symbol id="i-family" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="7" cy="6" r="2.5"/><circle cx="17" cy="6" r="2.5"/><circle cx="12" cy="12" r="2"/><path d="M3 20v-4a4 4 0 0 1 8 0M13 16a4 4 0 0 1 8 0v4M9.5 20v-1.5a2.5 2.5 0 0 1 5 0V20"/></g></symbol>
+  <symbol id="i-grad" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/></g></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 3 3h0a2 2 0 0 0 3-1.7V5.7A2 2 0 0 0 9 4Zm6 0a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-3 3h0a2 2 0 0 1-3-1.7"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 21V10l9-6 9 6v11H3Z"/><path d="M9 21v-6h6v6"/></g></symbol>
+</svg>
+
+<header>
+  <div class="wrap topo">
+    <a class="marca" href="#inicio" aria-label="Glasiele Gaede — início"><img src="img/logo.png" alt="Glasiele Gaede · Atendimento Pedagógico e Psicopedagógico" width="1358" height="419"></a>
+    <nav aria-label="Principal">
+      <a href="#atendimento">Atendimento</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-lar" href="https://wa.me/5521975851476?text=Ol%C3%A1%2C%20Glasi!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20seu%20trabalho." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg><span>Agendar</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker reveal">Psicopedagogia · Santa Rosa, Niterói</span>
+        <h1 class="reveal d1">Apoio famílias e ajudo crianças e adolescentes a <span>superar desafios na aprendizagem</span></h1>
+        <div class="eq reveal d2">Psicopedagogia <b>=</b> Desenvolvimento <b>+</b> Aprendizagem</div>
+        <p class="lead reveal d2">Avaliação e intervenção psicopedagógica com acolhimento, escuta ativa e carinhosa e muito profissionalismo, em parceria com a família e a escola.</p>
+        <div class="acoes reveal d3">
+          <a class="btn btn-lar" href="https://wa.me/5521975851476?text=Ol%C3%A1%2C%20Glasi!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20seu%20trabalho." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg>Fale comigo no WhatsApp</a>
+          <a class="btn btn-linha" href="#atendimento">Conheça o atendimento</a>
+        </div>
+      </div>
+      <div class="foto-hero reveal d1">
+        <div class="f"><img src="img/glasiele.jpg" alt="Glasiele Gaede, psicopedagoga, sorrindo" width="1290" height="1291"></div>
+        <span class="bolha">Olá, eu sou a Glasi!</span>
+        <div class="selo"><strong>5,0</strong><div><span class="est" aria-hidden="true">★★★★★</span><small>26 avaliações no Google</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="atendimento">
+    <div class="wrap">
+      <div class="cab">
+        <span class="kicker reveal">Atendimento</span>
+        <h2 class="reveal d1">Para quem é o <span>acompanhamento</span></h2>
+        <p class="lead reveal d2">O trabalho psicopedagógico vai muito além de melhorar as notas: ele fortalece as habilidades que sustentam a aprendizagem, o comportamento e a autonomia.</p>
+      </div>
+      <div class="publico">
+        <div class="pub reveal"><div class="ico"><svg><use href="#i-kid"/></svg></div><h3>Crianças e adolescentes</h3><p>Com transtornos do neurodesenvolvimento, dificuldades de aprendizagem ou desafios no processo de aprender.</p></div>
+        <div class="pub reveal d1"><div class="ico"><svg><use href="#i-family"/></svg></div><h3>Famílias</h3><p>Escuta, orientação e acolhimento para entender o que está acontecendo e como apoiar em casa.</p></div>
+        <div class="pub reveal d2"><div class="ico"><svg><use href="#i-school"/></svg></div><h3>Escola e equipe</h3><p>Ponte com a escola e com a equipe multidisciplinar que acompanha a criança.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hab">
+    <div class="wrap hab-grid">
+      <div>
+        <span class="kicker reveal">No consultório</span>
+        <h2 class="reveal d1">Aprender de um jeito vivo e personalizado</h2>
+        <p class="lead reveal d2" style="margin-top:.9rem">O foco é fortalecer as habilidades cognitivas e as funções executivas de cada paciente.</p>
+        <div class="chips reveal d2"><span class="l">Memória</span><span class="l">Atenção</span><span>Inibição</span><span>Planejamento</span><span>Flexibilidade cognitiva</span><span>Consciência fonológica</span></div>
+        <ul class="exemplos">
+          <li class="reveal"><svg><use href="#i-check"/></svg>Jogos e atividades criativas pensados para cada criança</li>
+          <li class="reveal d1"><svg><use href="#i-check"/></svg>Os interesses do paciente viram estratégia, como um álbum de futebol para trabalhar a leitura</li>
+          <li class="reveal d2"><svg><use href="#i-check"/></svg>Trabalho com bases científicas e muito carinho</li>
+        </ul>
+      </div>
+      <div class="hab-foto reveal d1"><img src="img/atendimento.jpg" alt="Atendimento psicopedagógico com materiais de estudo coloridos sobre a mesa" loading="lazy" width="1231" height="1500"></div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="wrap">
+      <div class="cab">
+        <span class="kicker reveal">Como funciona</span>
+        <h2 class="reveal d1">Um caminho feito <span>junto com a família</span></h2>
+      </div>
+      <div class="passos">
+        <div class="passo reveal"><h3>Acolhimento</h3><p>Conversa com a família para entender as dúvidas, a história e as necessidades da criança.</p></div>
+        <div class="passo reveal d1"><h3>Avaliação psicopedagógica</h3><p>Uma avaliação cuidadosa para identificar pontos importantes e trazer direcionamentos assertivos.</p></div>
+        <div class="passo reveal d2"><h3>Intervenção</h3><p>Atendimentos que desenvolvem as habilidades necessárias para a construção da aprendizagem.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="wrap sobre-grid">
+      <div class="sobre-foto reveal"><img src="img/glasiele-2.jpg" alt="Glasiele Gaede sorrindo ao ar livre" loading="lazy"></div>
+      <div>
+        <span class="kicker reveal">Sobre mim</span>
+        <h2 class="reveal d1">Prazer, sou a <span>Glasiele</span></h2>
+        <p class="lead reveal d2" style="margin-top:.9rem">Construí minha carreira na educação e hoje uso todo esse conhecimento para dar suporte às famílias que buscam avaliação e intervenção psicopedagógica.</p>
+        <ul class="form">
+          <li class="reveal"><svg><use href="#i-grad"/></svg><div><b>Pedagogia</b><span>Graduação</span></div></li>
+          <li class="reveal d1"><svg><use href="#i-book"/></svg><div><b>Psicopedagogia</b><span>Especialização</span></div></li>
+          <li class="reveal"><svg><use href="#i-school"/></svg><div><b>Gestão Escolar</b><span>MBA</span></div></li>
+          <li class="reveal d1"><svg><use href="#i-brain"/></svg><div><b>Neuropsicopedagogia</b><span>Em formação</span></div></li>
+        </ul>
+        <p class="citacao reveal d2">“As famílias podem esperar de mim acolhimento, escuta ativa e carinhosa e muito profissionalismo no atendimento aos pequenos e adolescentes.”</p>
+        <a class="btn btn-linha reveal d3" href="https://www.instagram.com/glasi.psicopedagoga/" target="_blank" rel="noopener"><svg><use href="#i-insta"/></svg>@glasi.psicopedagoga</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <div class="wrap">
+      <div class="cab">
+        <span class="kicker reveal">Depoimentos</span>
+        <h2 class="reveal d1">O que as <span>famílias</span> dizem</h2>
+        <span class="nota-g reveal d2">5,0 <span class="est" aria-hidden="true">★★★★★</span> · 26 avaliações no Google</span>
+      </div>
+      <div class="deps">
+        <article class="dep reveal"><span class="est" aria-label="5 estrelas">★★★★★</span><p>“Glasi é uma profissional de excelência! Tem um olhar acolhedor, crítico e amoroso ao mesmo tempo. Meu filho, que tem 9 anos, se adaptou rapidamente aos atendimentos e adora ir na tia Glasi!”</p><footer><span class="av">G</span><span>Gabriela Castro<small>Google</small></span></footer></article>
+        <article class="dep reveal d1"><span class="est" aria-label="5 estrelas">★★★★★</span><p>“Minha filha iniciou a avaliação psicopedagógica […] Mesmo antes da intervenção em si, só no período da avaliação já percebi mudanças incríveis: ela se tornou mais segura para ler, escrever e está muito mais participativa no ambiente escolar.”</p><footer><span class="av">I</span><span>Isabella Leão Morgan<small>Google</small></span></footer></article>
+        <article class="dep reveal d2"><span class="est" aria-label="5 estrelas">★★★★★</span><p>“Profissional atenciosa, com escuta ativa com a família e disponível para fazer ponte com a escola e equipe multidisciplinar. É carinhosa e paciente, respeitando as características específicas da criança.”</p><footer><span class="av">A</span><span>Adriana Mastrangelo Ebecken<small>Google</small></span></footer></article>
+        <article class="dep reveal"><span class="est" aria-label="5 estrelas">★★★★★</span><p>“Acolheu minhas filhas, uma de 17 anos e outra de 19 anos, com muito carinho e paciência, trazendo resultados visíveis no aprendizado e também na autoestima delas.”</p><footer><span class="av">L</span><span>LA Fotocine<small>Google</small></span></footer></article>
+        <article class="dep reveal d1"><span class="est" aria-label="5 estrelas">★★★★★</span><p>“A Glasi é uma profissional incrível. Ela é uma potência. Ela desenvolve seu trabalho com bases científicas. Ela é muito dedicada e tem muito carinho com todos que a procuram.”</p><footer><span class="av">G</span><span>Graziela Marraschi<small>Google</small></span></footer></article>
+        <article class="dep reveal d2"><span class="est" aria-label="5 estrelas">★★★★★</span><p>“Depois que comecei a ser atendida por ela eu melhorei MUITO não só na minha vida acadêmica, mas em muitos outros aspectos. Uma profissional pra levar pra vida!”</p><footer><span class="av">M</span><span>Maria Eduarda Ribeiro<small>Google</small></span></footer></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="wrap contato-grid">
+      <div>
+        <span class="kicker reveal">Contato</span>
+        <h2 class="reveal d1">Vamos <span>conversar</span>?</h2>
+        <p class="lead reveal d2" style="margin-top:.8rem">Se você está enfrentando desafios com a aprendizagem do seu filho ou da sua filha, me chame no WhatsApp.</p>
+        <div class="info">
+          <a class="reveal" href="https://wa.me/5521975851476?text=Ol%C3%A1%2C%20Glasi!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20seu%20trabalho." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg><div><b>WhatsApp</b><span>(21) 97585-1476</span></div></a>
+          <a class="reveal d1" href="https://www.google.com/maps/search/?api=1&query=Glasiele+Gaede+Psicopedagogia+R.+Noronha+Torrez%C3%A3o+24+Niter%C3%B3i" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><div><b>Endereço</b><span>R. Noronha Torrezão, 24<br>Santa Rosa, Niterói – RJ, 24240-182</span><div class="extras"><span>Entrada acessível · Estacionamento no local</span></div></div></a>
+          <div class="reveal d2"><svg><use href="#i-clock"/></svg><div><b>Horários</b><div class="horas"><span>Seg a Sex</span><span>9h às 18h</span><span>Sáb e Dom</span><span>Fechado</span></div></div></div>
+          <a class="reveal d3" href="https://www.instagram.com/glasi.psicopedagoga/" target="_blank" rel="noopener"><svg><use href="#i-insta"/></svg><div><b>Instagram</b><span>@glasi.psicopedagoga</span></div></a>
+        </div>
+        <a class="btn btn-lar reveal" href="https://wa.me/5521975851476?text=Ol%C3%A1%2C%20Glasi!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20seu%20trabalho." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg>Chamar no WhatsApp</a>
+      </div>
+      <div class="mapa reveal d1">
+        <iframe title="Mapa: Glasiele Gaede Psicopedagogia, Santa Rosa, Niterói" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Glasiele+Gaede+Psicopedagogia,+R.+Noronha+Torrez%C3%A3o,+24,+Niter%C3%B3i&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <b>Glasiele Gaede</b>
+    <span>© <span id="ano">2026</span> Glasiele Gaede · Atendimento Pedagógico e Psicopedagógico · Niterói</span>
+    <span>Site por <a href="https://firmiano.com.br" target="_blank" rel="noopener">Firmiano</a></span>
+  </div>
+</footer>
+
+<a class="zap" href="https://wa.me/5521975851476?text=Ol%C3%A1%2C%20Glasi!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20seu%20trabalho." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg><use href="#i-zap"/></svg></a>
+
+<script>
+document.getElementById('ano').textContent=new Date().getFullYear();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
